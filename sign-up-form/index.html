@@ -24,7 +24,7 @@
             <p>
                 This is not a real online service!
                 You know you need something like this in your life to help
-                you realize your deepest dreams.
+                you realize your deepest dreams.<br>
                 Sign up <span class="decorator">now</span> to get started.
             </p>
             <p>
@@ -33,43 +33,55 @@
         </div>
 
         <form action="./" class="signup" method="post">
-            <fieldset>
-                <legend>Let's do this!</legend>
+            <div class="form_wrapper">
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <ul class="questions">
+                        <li class="form_row">
+                            <div class="question">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="fname"
+                                    required>
+                            </div>
+                            <div class="question">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lname"
+                                    required>
+                            </div>
+                        </li>
+                        <li class="form_row">
+                            <div class="question">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="question">
+                                <label for="tel">Phone Number</label>
+                                <input type="tel" id="tel" name="tel"
+                                    placeholder="(xxx) xxx-xxxx">
+                            </div>
+                        </li>
+                        <li class="form_row">
+                            <div class="question">
+                                <label for="pw">Password</label>
+                                <input type="password" id="pw" name="pw"
+                                    required>
+                            </div>
+                
+                            <div class="question">
+                                <label for="pw_confirm">Password</label>
+                                <input type="password" id="pw_confirm" name="pw_confirm"
+                                    required>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
 
-                <div class="questions">
 
-                    <div class="form_row">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname"
-                            required>
-
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname"
-                            required>
-                    </div>
-
-                    <div class="form_row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-
-                        <label for="tel">Phone Number</label>
-                        <input type="tel" id="tel" name="tel">
-                    </div>
-
-                    <div class="form_row">
-                        <label for="pw">Password</label>
-                        <input type="password" id="pw" name="pw"
-                            required>
-                            
-                        <label for="pw_confirm">Password</label>
-                        <input type="password" id="pw_confirm" name="pw_confirm"
-                            required>
-                    </div>
+                <div class="button_wrapper">
+                    <button class="submit">Create Account</button>
                 </div>
 
-                <button class="submit">Create Account</button>
-
-            </fieldset>
+                </fieldset>
         </form>
 
         <div class="log_in">
